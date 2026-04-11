@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+html {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.layout {
+  max-width: 476px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  background-color: #f8fafc;
+}
+.header {
+  padding: 16px;
+  background-color: #1f5a87;
+  position: relative;
+}
+.header h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: x-large;
+  font-weight: 800;
+}
+.header .settings {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .settings a {
+  color: #ffffff;
+  font-size: 18px;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 130px);
+  overflow-y: scroll;
+  padding: 32px 42px;
+  gap: 24px;
+}
+.item {
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  box-shadow: 0px 0px 4px 1px #999;
+  border-radius: 16px;
+}
+.item-image {
+  width: 40%;
+}
+.item-submit,
+.btn-lamp-submit,
+.btn-fan-submit {
+  background-color: #1f5a87;
+  width: 100%;
+  padding: 4px 8px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 8px;
+}
+.page-title {
+  padding: 16px;
+}
+.page-title h3 {
+  text-align: center;
+  font-weight: 800px;
+  font-size: xx-large;
+}
+.lamps,
+.fans {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 0px 16px 16px 16px;
+}
+.lamp,
+.fan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background-color: white;
+  box-shadow: 0px 0px 4px 1px #999;
+}
+.lamp-location-text,
+.fan-location-text {
+  font-weight: 700;
+}
+.lamp-image,
+.fan-image {
+  width: 100px;
+  object-fit: cover;
+}
+.bottom-bar {
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.bottom-bar ul {
+  list-style-type: none;
+  background-color: #1f5a87;
+  display: flex;
+  width: 100%;
+  padding: 16px;
+}
+.bottom-bar ul li {
+  flex: 1;
+  text-align: center;
+}
+.bottom-bar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: x-large;
+  display: block;
+}
+.bottom-bar ul li a:hover {
+  scale: 120%;
+  transition: all 0.3 ease-in-out;
+}
