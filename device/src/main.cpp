@@ -11,7 +11,7 @@ const char *password = "your password";
 const int buzzer = 5;
 
 // Pin relay tiap ruangan (edit sesuai kebutuhan)
-const int relayPin[5] = {0, 26, 25, 16, 32}; // index 0 kosong, pakai 1-4
+const int relayPin[5] = {0, 26, 25, 33, 32}; // index 0 kosong, pakai 1-4
 
 // State tiap ruangan
 bool lampState[5] = {false, false, false, false, false};
@@ -52,7 +52,6 @@ void handlePost(int roomId)
 // Handler per ruangan
 void getRoom1()
 {
-  Serial.println("GET room1 called"); // cek apakah ini pernah terpanggil
   handleGet(1);
 }
 void getRoom2() { handleGet(2); }
@@ -61,7 +60,6 @@ void getRoom4() { handleGet(4); }
 
 void setRoom1()
 {
-  Serial.println("GET room1 called"); // cek apakah ini pernah terpanggil
   handlePost(1);
 }
 void setRoom2() { handlePost(2); }

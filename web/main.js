@@ -1,4 +1,4 @@
-const endpoint = "your esp ip";
+const endpoint = "ip esp32";
 
 function setLamp(roomId) {
   const btn = document.getElementById(`btn-lamp-ruang${roomId}`);
